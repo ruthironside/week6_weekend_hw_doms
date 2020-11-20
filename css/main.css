@@ -1,0 +1,29 @@
+body {
+    font-family: Helvetica;
+    background-color: rgb(239, 239, 245);
+    margin: 0px
+  }
+
+
+#new-item-form {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    font-family: 'Schoolbell', cursive;
+}
+
+.header {
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    background: #278e4d;
+    color: white;
+    font-size: 30px;
+    font-family: 'Schoolbell', cursive;
+}
+
+.animals-list {
+    /* display: flex;
+    flex-direction: row; */
+    font-family: 'Schoolbell', cursive;
+}
