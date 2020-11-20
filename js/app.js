@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const form = document.querySelector('#new-item-form');
     form.addEventListener('submit', handleFormSubmit);
+
+    const deletebutton = document.querySelector('#delete');
+    deletebutton.addEventListener('click', handleDeleteAll);
 })
 
 const handleFormSubmit = function(event) {
@@ -19,5 +22,23 @@ const createAnimalListItem = function(form) {
     const animalListItem = document.createElement('li');
     animalListItem.classList.add('animal-list-item');
 
-    return animalListItem
+    const name = document.createElement('h2');
+    name.textContent = form.name.value;
+    animalListItem.appendChild(name);
+
+    const species = document.createElement('h1');
+    species.textContent = form.species.value;
+    animalListItem.appendChild(species);
+
+    const continent = document.createElement('h1');
+    continent.textContent = form.continent.value;
+    animalListItem.appendChild(continent);
+
+
+    return animalListItem;
+}
+
+const handleDeleteAll = function (event) {
+    const animalList = document.querySelector('#endangered-animals')
+    animalList.innerHTML = '';
 }
