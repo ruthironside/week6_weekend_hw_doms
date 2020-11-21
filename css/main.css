@@ -81,3 +81,21 @@ select {
     background-color: rgb(255, 255, 255);
     margin: 5px;
 }
+#endangered-animals {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    text-align: center;
+    /* align-items: center; */
+  }
+
+.animal-list-item {
+    box-shadow: 0 4px 8px 0  #155b2f;
+    border-radius: 5px;
+    text-decoration: none;
+    list-style: none;
+    /* margin: 30px; */
+    padding: 20px;
+    background-color:  rgb(255, 255, 255);
+
+}
